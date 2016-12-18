@@ -10,7 +10,7 @@
     "pree2e": "webdriver-manager update",
     "e2e": "protractor",
     "build": "ng build",
-    "build--prod": "ng build --prod --aot && npm run sw",
+    "build--prod": "ng build --prod --base-href ./ --aot && npm run sw",
     "sw": "sw-precache --root=dist --config=sw-precache-config.js",
     "disk-build": "ng build && npm run sw",
     "disk-serve": "cd dist && live-server --port=4200 --host=localhost --entry-file=/index.html"
